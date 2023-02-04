@@ -1,7 +1,6 @@
 import { useState } from 'react';
 
 import styles from './searchbar.module.css';
-import Notiflix from 'notiflix';
 
 const Searchbar = ({ onSubmit }) => {
   const [state, setState] = useState('');
@@ -13,9 +12,6 @@ const Searchbar = ({ onSubmit }) => {
 
   const handleSubmit = e => {
     e.preventDefault();
-    if (state.trim() === '') {
-      return Notiflix.Notify.warning('Pleace, fill the field');
-    }
     onSubmit(state);
     setState('');
   };

@@ -28,7 +28,9 @@ const App = () => {
       try {
         setLoading(true);
         const data = await getImages(searchQuery, page);
-
+        if (data.total === 0) {
+          return Notiflix.Notify.warning('Nothing found, pleace try again!');
+        }
         const { hits, totalHits } = data;
         setItems(prevItems => {
           return [...prevItems, ...hits];

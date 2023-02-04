@@ -1,5 +1,6 @@
 import ImageGalleryItem from 'components/ImageGalleryItem/ImageGalleryItem';
 import PropTypes from 'prop-types';
+
 import styles from './imageGallery.module.css';
 
 const ImageGallery = ({ items, error, handleShowModal }) => {
