@@ -13,6 +13,7 @@ const getImages = async (nextRequest, prevPage) => {
       per_page: 12,
     },
   });
+  console.log(data);
 
   return data;
 };

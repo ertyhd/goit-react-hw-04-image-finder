@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 function ImageGalleryItem({
   webformatURL,
-  alt,
+  tags,
   largeImageURL,
   handleShowModal,
 }) {
@@ -13,7 +13,7 @@ function ImageGalleryItem({
         onClick={handleShowModal}
         src={webformatURL}
         srcSet={largeImageURL}
-        alt={alt}
+        alt={tags}
         className={styles.ImageGalleryItemImage}
       />
     </li>
@@ -25,6 +25,6 @@ export default ImageGalleryItem;
 ImageGalleryItem.propTypes = {
   webformatURL: PropTypes.string.isRequired,
   largeImageURL: PropTypes.string.isRequired,
-  alt: PropTypes.string.isRequired,
+  tags: PropTypes.string.isRequired,
   handleShowModal: PropTypes.func,
 };

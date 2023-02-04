@@ -12,7 +12,6 @@ const ImageGallery = ({ items, error, handleShowModal }) => {
   ));
   return (
     <>
-      {/* {loading && <p>...Loading</p>} */}
       {error && <p>Somthing goes wrong. Please try again later.</p>}
       <ul className={styles.ImageGallery}>{elements}</ul>
     </>
