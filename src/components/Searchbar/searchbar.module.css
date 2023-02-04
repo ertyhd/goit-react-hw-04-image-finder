@@ -125,6 +125,7 @@
 
 .header {
   z-index: 1000;
+  position: fixed;
   background-color: #579fe1;
   height: 40px;
   padding: 0;
