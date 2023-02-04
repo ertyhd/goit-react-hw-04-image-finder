@@ -1,4 +1,4 @@
-.Searchbar {
+/* .Searchbar {
   top: 0;
   left: 0;
   position: sticky;
@@ -32,8 +32,6 @@
   width: 70px;
   height: 25px;
   border: 0;
-  /* background-color: teal; */
-  /* background-image: url('https://image.flaticon.com/icons/svg/149/149852.svg'); */
   background-size: 40%;
   background-repeat: no-repeat;
   background-position: center;
@@ -42,7 +40,6 @@
   cursor: pointer;
   outline: none;
   margin-right: 10px;
-  /* border: black 1px solid; */
 }
 
 .SearchForButton:hover {
@@ -72,4 +69,65 @@
 .SearchFormInput::placeholder {
   font: inherit;
   font-size: 18px;
+} */
+
+.searchForm {
+  z-index: 1001;
+  position: fixed;
+  top: 20px;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+  height: 30px;
+  border-radius: 30px;
+}
+.searchForm:hover > .searchTxt {
+  width: 240px;
+  padding: 0 6px;
+}
+.searchForm:hover > .searchBtn {
+  background: white;
+  color: #444444;
+}
+.searchBtn {
+  color: #eeeeee;
+  float: right;
+  width: 30px;
+  height: 30px;
+
+  border-radius: 50%;
+
+  background: #579fe1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+  cursor: pointer;
+  text-decoration: none;
+}
+.searchBtn > i {
+  font-size: 16px;
+}
+.searchTxt {
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: #212121;
+  font-size: 14px;
+  transition: 0.4s;
+  line-height: 30px;
+  width: 0px;
+  font-weight: bold;
+}
+
+.header {
+  z-index: 1000;
+  background-color: #579fe1;
+  height: 40px;
+  padding: 0;
+  margin: 0;
+  width: 100%;
 }
